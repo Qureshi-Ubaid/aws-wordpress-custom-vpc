@@ -7,7 +7,7 @@
   "containerDefinitions": [
     {
       "name": "wordpress-app",
-      "image": "123456789012.dkr.ecr.us-east-1.amazonaws.com/custom-wordpress:latest",
+      "image": "custom-wordpress:latest",
       "essential": true,
       "portMappings": [{ "containerPort": 80, "hostPort": 80 }]
     }
