@@ -1,0 +1,4 @@
+FROM mysql:8.0
+ENV MYSQL_DATABASE=wordpress
+ENV MYSQL_USER=wordpress_user
+EXPOSE 3306

@@ -1,0 +1,15 @@
+apiVersion: ecs/v1
+kind: Service
+metadata:
+  name: wordpress-service
+spec:
+  desiredCount: 2
+  launchType: FARGATE
+  networkConfiguration:
+    awsvpcConfiguration:
+      subnets:
+        - subnet-11111111
+        - subnet-22222222
+      securityGroups:
+        - sg-12345678
+      assignPublicIp: ENABLED
